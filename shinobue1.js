@@ -58,12 +58,12 @@ function run()
       cursor.staff = 0;
       cursor.voice = 0;
       cursor.rewind();  // set cursor to first chord/rest
-      var font = new QFont("Shakuhachi", 15);
+      var font = new QFont("Shinobue", 15);
       while (!cursor.eos()) {
             if (cursor.isChord()) {
                   
                   var pitch = cursor.chord().topNote().pitch;
-                  var index = pitch-78+             23   //                            Shakuhachi Length [寸  (su-n)]
+                  var index = pitch-49-             1   //                            Shinobue  [ hon cho-shi ]
                   if(index >= 0 && index < fingerings.length-5){ 
                       var text  = new Text(curScore);
                       text.text = fingerings[index];
@@ -82,7 +82,7 @@ function run()
 //---------------------------------------------------------
 
 var mscorePlugin = {
-      menu: 'Plugins.Shakuhachi23 Notes',
+      menu: 'Plugins.Shinobue01 Notes',
       init: init,
       run:  run
       };

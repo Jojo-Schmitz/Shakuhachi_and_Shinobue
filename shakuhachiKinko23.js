@@ -58,7 +58,7 @@ function run()
       cursor.staff = 0;
       cursor.voice = 0;
       cursor.rewind();  // set cursor to first chord/rest
-      var font = new QFont("Shakuhachi", 15);
+      var font = new QFont("ShakuhachiKinko", 15);
       while (!cursor.eos()) {
             if (cursor.isChord()) {
                   
@@ -82,7 +82,7 @@ function run()
 //---------------------------------------------------------
 
 var mscorePlugin = {
-      menu: 'Plugins.Shakuhachi23 Notes',
+      menu: 'Plugins.ShakuhachiKinko23 Notes',
       init: init,
       run:  run
       };

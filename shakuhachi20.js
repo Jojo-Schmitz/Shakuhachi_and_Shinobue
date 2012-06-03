@@ -58,7 +58,7 @@ function run()
       cursor.staff = 0;
       cursor.voice = 0;
       cursor.rewind();  // set cursor to first chord/rest
-      var font = new QFont("Shakuhachi18", 15);
+      var font = new QFont("Shakuhachi", 15);
       while (!cursor.eos()) {
             if (cursor.isChord()) {
                   
