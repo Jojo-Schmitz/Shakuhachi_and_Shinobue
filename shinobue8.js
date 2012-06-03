@@ -82,7 +82,7 @@ function run()
 //---------------------------------------------------------
 
 var mscorePlugin = {
-      menu: 'Plugins.Shinobue08 Notes',
+      menu: 'Plugins.Shinobue.08 Notes',
       init: init,
       run:  run
       };

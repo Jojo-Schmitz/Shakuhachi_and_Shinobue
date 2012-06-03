@@ -82,7 +82,7 @@ function run()
 //---------------------------------------------------------
 
 var mscorePlugin = {
-      menu: 'Plugins.Shakuhachi21 Notes',
+      menu: 'Plugins.Shakuhachi.21 Notes',
       init: init,
       run:  run
       };
